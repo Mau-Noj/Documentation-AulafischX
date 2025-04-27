@@ -392,12 +392,12 @@ Iniciar recorrido
 </button></p>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const driver = window.driver.js.driver;
+    const driver = window.driver;
 
     const tour = driver({
       steps: [
         {
-          element: 'h1', // Título principal "Bienvenido a AulaFischX"
+          element: 'h1',
           popover: {
             title: 'Bienvenido',
             description: 'Esta es la documentación oficial de AulaFischX. 🚀',
@@ -405,7 +405,7 @@ Iniciar recorrido
           }
         },
         {
-          element: 'ul', // Lista de contenidos
+          element: 'ul',
           popover: {
             title: 'Contenidos',
             description: 'Aquí encontrarás las secciones disponibles para tu aprendizaje.',
@@ -413,17 +413,17 @@ Iniciar recorrido
           }
         },
         {
-          element: '.md-nav__list', // Menú lateral izquierdo
+          element: '.md-nav__list',
           popover: {
             title: 'Navegación',
-            description: 'Usa este menú para explorar la documentación por temas.',
+            description: 'Utiliza este menú para moverte entre los temas de la documentación.',
             position: 'right'
           }
         }
       ]
     });
 
-    const startButton = document.querySelector('button');
+    const startButton = document.getElementById('start-tour');
     if (startButton) {
       startButton.addEventListener('click', function() {
         tour.drive();
