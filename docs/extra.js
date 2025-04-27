@@ -38,5 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       console.error('Driver.js no está cargado aún.');
     }
+    console.log('Extra.js cargado');
+    console.log('Driver.js es:', window.driver);
+
   });
   
