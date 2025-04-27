@@ -384,6 +384,42 @@
 <li>Asignación de roles</li>
 <li>Evaluaciones y reportes</li>
 </ul>
+<h1 id="bienvenido-a-aulafischx_1">¡Bienvenido a AulaFischX! 🚀</h1>
+<p><button id="start-tour" style="padding:10px 20px; background:#007bff; color:white; border:none; border-radius:5px; cursor:pointer;">
+Iniciar recorrido
+</button></p>
+<script>
+document.getElementById('start-tour').addEventListener('click', function() {
+    const driver = new Driver();
+
+    driver.highlight([
+      {
+        element: '#start-tour',
+        popover: {
+          title: '¡Aquí empieza!',
+          description: 'Haz clic para iniciar un recorrido por AulaFischX.',
+          position: 'bottom'
+        }
+      },
+      {
+        element: '.md-header-nav__title',
+        popover: {
+          title: 'Título del sitio',
+          description: 'Este es el nombre de tu documentación.',
+          position: 'bottom'
+        }
+      },
+      {
+        element: '.md-search__form',
+        popover: {
+          title: 'Buscador',
+          description: 'Usa el buscador para encontrar contenido rápidamente.',
+          position: 'bottom'
+        }
+      }
+    ]);
+});
+</script>
 
 
 
