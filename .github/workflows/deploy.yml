@@ -5,9 +5,15 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -21,10 +27,22 @@ jobs:
         run: |
           pip install mkdocs mkdocs-material
 
-      - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Build MkDocs site
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          mkdocs gh-deploy --force --remote-branch gh-pages --remote-name origin
+          mkdocs build
+
+      - name: Upload built site
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
