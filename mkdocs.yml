@@ -9,8 +9,9 @@ nav:
   - Asignación de Roles: asignacion_roles.md
 
 extra_javascript:
-  - https://unpkg.com/driver.js/dist/driver.min.js
+  - https://unpkg.com/driver.js@1.0.1/build/driver.min.js
   - extra.js
 
 extra_css:
-  - https://unpkg.com/driver.js/dist/driver.min.css
+  - https://unpkg.com/driver.js@1.0.1/build/driver.min.css
+
