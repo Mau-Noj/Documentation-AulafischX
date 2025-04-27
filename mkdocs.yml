@@ -15,3 +15,12 @@ extra_javascript:
 extra_css:
   - https://unpkg.com/driver.js@1.0.1/build/driver.min.css
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com
+  # 👇 Esto permite recursos externos de manera segura
+  csp:
+    default-src: ["'self'", "https://unpkg.com"]
+    script-src: ["'self'", "https://unpkg.com"]
+    style-src: ["'self'", "https://unpkg.com"]
