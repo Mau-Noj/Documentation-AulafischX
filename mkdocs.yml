@@ -1,0 +1,9 @@
+site_name: AulaFischX
+theme:
+  name: material
+
+nav:
+  - Inicio: index.md
+  - Registro de Estudiantes: registro_estudiantes.md
+  - Creación de Cursos: creacion_cursos.md
+  - Asignación de Roles: asignacion_roles.md
