@@ -15,34 +15,43 @@ Iniciar recorrido
 </button>
 
 <script>
-document.getElementById('start-tour').addEventListener('click', function() {
-    const driver = new Driver();
+  document.addEventListener('DOMContentLoaded', function () {
+    const driver = window.driver.js.driver;
 
-    driver.highlight([
-      {
-        element: '#start-tour',
-        popover: {
-          title: '¡Aquí empieza!',
-          description: 'Haz clic para iniciar un recorrido por AulaFischX.',
-          position: 'bottom'
+    const tour = driver({
+      steps: [
+        {
+          element: 'h1', // Título principal "Bienvenido a AulaFischX"
+          popover: {
+            title: 'Bienvenido',
+            description: 'Esta es la documentación oficial de AulaFischX. 🚀',
+            position: 'bottom'
+          }
+        },
+        {
+          element: 'ul', // Lista de contenidos
+          popover: {
+            title: 'Contenidos',
+            description: 'Aquí encontrarás las secciones disponibles para tu aprendizaje.',
+            position: 'right'
+          }
+        },
+        {
+          element: '.md-nav__list', // Menú lateral izquierdo
+          popover: {
+            title: 'Navegación',
+            description: 'Usa este menú para explorar la documentación por temas.',
+            position: 'right'
+          }
         }
-      },
-      {
-        element: '.md-header-nav__title',
-        popover: {
-          title: 'Título del sitio',
-          description: 'Este es el nombre de tu documentación.',
-          position: 'bottom'
-        }
-      },
-      {
-        element: '.md-search__form',
-        popover: {
-          title: 'Buscador',
-          description: 'Usa el buscador para encontrar contenido rápidamente.',
-          position: 'bottom'
-        }
-      }
-    ]);
-});
+      ]
+    });
+
+    const startButton = document.querySelector('button');
+    if (startButton) {
+      startButton.addEventListener('click', function() {
+        tour.drive();
+      });
+    }
+  });
 </script>

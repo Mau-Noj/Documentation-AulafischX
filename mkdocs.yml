@@ -7,3 +7,10 @@ nav:
   - Registro de Estudiantes: registro_estudiantes.md
   - Creación de Cursos: creacion_cursos.md
   - Asignación de Roles: asignacion_roles.md
+
+extra_javascript:
+  - extra.js
+  - https://unpkg.com/driver.js/dist/driver.min.js
+
+extra_css:
+  - https://unpkg.com/driver.js/dist/driver.min.css
