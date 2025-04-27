@@ -1,15 +1,20 @@
-# Bienvenido a AulaFischX
+---
+title: AulaFischX
+description: Plataforma Educativa AulaFischX basada en Moodle
+hide:
+  - navigation
+  - toc
+---
 
-Esta es la documentación de la plataforma educativa AulaFischX.
+# AulaFischX 🚀
 
-## Contenidos
-- Registro de estudiantes
-- Creación de cursos
-- Asignación de roles
-- Evaluaciones y reportes
+Bienvenido a la plataforma educativa oficial del Instituto Técnico Vocacional.
 
-# ¡Bienvenido a AulaFischX! 🚀
-
-<button id="start-tour" style="padding:10px 20px; background:#007bff; color:white; border:none; border-radius:5px; cursor:pointer;">
+<div style="margin-top: 2rem;">
+<a href="#inicio" class="md-button md-button--primary">
 Iniciar recorrido
-</button>
+</a>
+<a href="#contenidos" class="md-button">
+Ver contenidos
+</a>
+</div>
