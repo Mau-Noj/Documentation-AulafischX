@@ -9,18 +9,17 @@ nav:
   - Asignación de Roles: asignacion_roles.md
 
 extra_javascript:
-  - https://unpkg.com/driver.js@1.0.1/build/driver.min.js
+  - https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.min.js
   - extra.js
 
 extra_css:
-  - https://unpkg.com/driver.js@1.0.1/build/driver.min.css
+  - https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.min.css
 
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com
-  # 👇 Esto permite recursos externos de manera segura
   csp:
-    default-src: ["'self'", "https://unpkg.com"]
-    script-src: ["'self'", "https://unpkg.com"]
-    style-src: ["'self'", "https://unpkg.com"]
+    default-src: ["'self'", "https://cdn.jsdelivr.net"]
+    script-src: ["'self'", "https://cdn.jsdelivr.net"]
+    style-src: ["'self'", "https://cdn.jsdelivr.net"]
