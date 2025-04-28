@@ -6,15 +6,19 @@ hide:
   - toc
 ---
 
-# AulaFischX 🚀
+<div class="hero-section">
+  <h1>Bienvenido a AulaFischX</h1>
+  <p>La plataforma educativa oficial del Instituto Técnico Vocacional Dr. Imrich Fischmann.</p>
+  
+<div class="hero-buttons">
+  <a href="#contenidos" class="md-button md-button--primary">
+    Empezar ahora
+  </a>
+  <a href="registro_estudiantes/" class="md-button">
+    Conoce la institución
+  </a>
+</div>
 
-Bienvenido a la plataforma educativa oficial del Instituto Técnico Vocacional.
-
-<div style="margin-top: 2rem;">
-<a href="#inicio" class="md-button md-button--primary">
-Iniciar recorrido
-</a>
-<a href="#contenidos" class="md-button">
-Ver contenidos
-</a>
+<div id="help-tour-button" class="help-off" title="¿Necesitas ayuda?">
+  💡
 </div>

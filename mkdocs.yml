@@ -1,43 +1,24 @@
 site_name: AulaFischX
 theme:
   name: material
-  language: es
-  palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-    - scheme: slate
-      primary: indigo
-      accent: indigo
+  logo: img/logo.png
+  favicon: img/logo.png
   features:
     - navigation.tabs
-    - navigation.sections
     - navigation.top
-    - search.suggest
-    - search.highlight
-    - search.share
-    - content.action.edit
-    - content.tabs.link
-    - content.code.copy
     - header.autohide
 
+extra_css:
+  - styles/extra.css
+  - https://cdn.jsdelivr.net/npm/shepherd.js/dist/css/shepherd.css  # 🔥 Shepherd.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/shepherd.js/dist/js/shepherd.min.js # 🔥 Shepherd.js
+  - styles/extra.js
+
 nav:
-  - Home: index.md
-  - Registro de Estudiantes: registro_estudiantes.md
-  - Creación de Cursos: creacion_cursos.md
-  - Asignación de Roles: asignacion_roles.md
+  - Inicio: index.md
+  - Documentación para profesores: teacher.md
+  - Documentación para estudiantes: student.md
+  - Documentación para admin: admin.md
 
-markdown_extensions:
-  - admonition
-  - codehilite
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.details
-  - toc:
-      permalink: true
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com
