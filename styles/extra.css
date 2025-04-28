@@ -1,0 +1,242 @@
+/* Fondo general */
+body {
+    background: url('../img/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Header completamente transparente */
+  .md-header {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(12px) saturate(180px);
+    box-shadow: none;
+  }
+  
+  /* Tabs completamente transparentes */
+  .md-tabs {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(12px) saturate(180px);
+    box-shadow: none;
+  }
+  
+  /* Fondo de contenido transparente */
+  .md-main, .md-main__inner {
+    background: transparent;
+  }
+  
+  /* Ajuste de márgenes del contenido */
+  .md-main__inner {
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+  
+  /* Ocultar el título h1 automático de la página principal */
+  .md-content__inner h1:first-of-type {
+    display: none;
+  }
+  
+  /* Menú lateral */
+  .md-nav {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+  }
+  
+  /* Footer */
+  .md-footer {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    color: white;
+  }
+  
+  /* Textos blancos con sombra */
+  h1, h2, h3, h4, p, li {
+    color: white;
+    text-shadow: 0 0 6px rgba(0,0,0,0.8);
+  }
+  
+  /* ==================== */
+  /* Hero Section (Bienvenida) */
+  /* ==================== */
+  
+  .hero-section {
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  
+  /* Título grande */
+  .hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+  }
+  
+  /* Subtítulo */
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+  }
+  
+  /* Botones del Hero */
+  .hero-buttons {
+    margin-top: 2rem;
+  }
+  
+  .hero-buttons .md-button {
+    margin: 0 1rem;
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  /* Botón principal (rosa) */
+  .hero-buttons .md-button--primary {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+  
+  /* Botón secundario (borde blanco) */
+  .hero-buttons .md-button:not(.md-button--primary) {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  /* Hover de ambos botones: azul celeste */
+  .hero-buttons .md-button:hover {
+    background-color: #448aff;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+  
+  /* ==================== */
+  /* Responsive para móviles */
+  /* ==================== */
+  @media (max-width: 600px) {
+    .hero-section {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-buttons .md-button {
+      margin: 0.5rem 0;
+      width: 80%;
+    }
+  }
+  
+  
+/* 🔥 Oscurecer más el fondo mientras el tour está activo */
+.shepherd-modal-overlay-container {
+    background: rgba(0, 0, 0, 0.7) !important; /* Antes era 0.5 o menos, ahora 0.7 */
+    backdrop-filter: blur(3px); /* Opcional: desenfoque suave */
+  }
+  
+  /* 🔥 Personalizar los cuadros (popovers) del Tour */
+  .shepherd-theme-default .shepherd-content {
+    background: #ffffff; /* Fondo blanco puro */
+    color: #333; /* Texto oscuro */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4); /* Sombra elegante */
+    padding: 20px; /* Más espacio interno */
+  }
+  
+  /* Opcional: Personalizar títulos */
+  .shepherd-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e88e5; /* Azul vibrante */
+  }
+  
+  /* Opcional: Personalizar el texto */
+  .shepherd-text {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Botones */
+  .shepherd-button {
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Botón primario */
+  .shepherd-button-primary {
+    background-color: #1e88e5; /* Azul vibrante */
+    color: white;
+    border: none;
+  }
+  
+  .shepherd-button-primary:hover {
+    background-color: #1565c0; /* Azul más fuerte al pasar el mouse */
+  }
+
+  .shepherd-modal-overlay-container {
+    background: rgba(0, 0, 0, 0.8) !important; /* más oscuro */
+    backdrop-filter: blur(3px); /* opcional: desenfoque suave */
+  }
+  
+
+  #help-tour-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #757575, #424242); /* Gris apagado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+    animation: float 3s ease-in-out infinite;
+    transition: background 0.5s, box-shadow 0.5s;
+  }
+  
+  /* Cuando pasa el mouse (hover) o se activa */
+  #help-tour-button:hover,
+  #help-tour-button.help-on {
+    background: linear-gradient(135deg, #448aff, #2962ff); /* Azul encendido */
+    box-shadow: 0px 0px 15px 5px rgba(68, 138, 255, 0.6);
+  }
+  
+  /* Animación flotante */
+  @keyframes float {
+    0% { transform: translatey(0px); }
+    50% { transform: translatey(-8px); }
+    100% { transform: translatey(0px); }
+  }
+  
+
+  /* 🔥 Cuando pasas el mouse encima de las opciones del navbar */
+.md-tabs__link:hover,
+.md-nav__link:hover {
+  color: #4caf50; /* Verde bonito */
+  text-shadow: 0 0 6px rgba(76, 175, 80, 0.7); /* Opcional: brilla un poco en verde */
+}
