@@ -1,4 +1,5 @@
 site_name: AulaFischX
+
 theme:
   name: material
   logo: img/logo.png
@@ -7,18 +8,35 @@ theme:
     - navigation.tabs
     - navigation.top
     - header.autohide
+    - navigation.sections        # Activa secciones en la navegación izquierda
+    - navigation.indexes         # Permite indexar múltiples páginas
+
 
 extra_css:
   - styles/extra.css
-  - https://cdn.jsdelivr.net/npm/shepherd.js/dist/css/shepherd.css  # 🔥 Shepherd.css
+  - https://cdn.jsdelivr.net/npm/shepherd.js/dist/css/shepherd.css
 
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/shepherd.js/dist/js/shepherd.min.js # 🔥 Shepherd.js
+  - https://cdn.jsdelivr.net/npm/shepherd.js/dist/js/shepherd.min.js
   - styles/extra.js
 
 nav:
   - Inicio: index.md
   - Documentación para profesores: teacher.md
   - Documentación para estudiantes: student.md
-  - Documentación para admin: admin.md
+  - Documentación para admin:
+      - Introducción: admin.md
+      - Configuración inicial: admin/configuracion.md
+      - Gestión de usuarios: admin/usuarios.md
+      - Seguridad y respaldo: admin/seguridad.md
+      - Personalización: admin/personalizacion.md
 
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - footnotes
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences

@@ -22,3 +22,9 @@ hide:
 <div id="help-tour-button" class="help-off" title="¿Necesitas ayuda?">
   💡
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.body.classList.add("homepage");
+  });
+</script>
