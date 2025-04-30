@@ -240,3 +240,33 @@ body {
   color: #4caf50; /* Verde bonito */
   text-shadow: 0 0 6px rgba(76, 175, 80, 0.7); /* Opcional: brilla un poco en verde */
 }
+
+
+/* Código para fondo blanco (excepto el indice)*/
+
+/* Aplica fondo blanco solo a las páginas que NO sean la de inicio */
+body:not(.homepage) .md-main__inner {
+  background: rgba(255, 255, 255, 0.95);
+  color: #111 !important;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mejora de contraste para todos los textos dentro del contenido */
+body:not(.homepage) .md-content,
+body:not(.homepage) .md-content h1,
+body:not(.homepage) .md-content h2,
+body:not(.homepage) .md-content h3,
+body:not(.homepage) .md-content p,
+body:not(.homepage) .md-content li,
+body:not(.homepage) .md-content strong {
+  color: #111 !important;
+}
+
+/* Imagen representativa justo debajo del título */
+.md-content img[alt="admin"] {
+  display: block;
+  margin: 1.5rem auto 2rem auto; /* centrada con espacio */
+  width: 160px; /* ajusta el tamaño a gusto */
+}
