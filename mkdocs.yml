@@ -21,6 +21,8 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/shepherd.js/dist/js/shepherd.min.js
   - styles/extra.js
   - https://fonts.googleapis.com/icon?family=Material+Icons
+  - https://unpkg.com/medium-zoom@1.0.6/dist/medium-zoom.min.js
+  - styles/extra-zoom.js
 
 nav:
   - Inicio: index.md
