@@ -2,6 +2,24 @@
 
 ![admin](../img/admin.png)
 
+## CREACIÓN DE USUARIOS {.text-center}
+
+<div style="text-align: center; margin: 1em 0;">
+  <span class="highlight">
+    😵‍💫 Si el vídeo no fue suficiente y tienes dudas, aquí algunos detalles extra:
+  </span>
+</div>
+
+
+
+
+<div style="text-align: center; margin: 1em 0;">
+  <img
+    src="/img/site_user.png"
+    alt="admin"
+    style="width: 600px; max-width: 100%; height: auto;"
+  />
+</div>
 
 
 

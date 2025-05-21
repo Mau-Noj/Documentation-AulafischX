@@ -29,8 +29,8 @@ nav:
   - Documentación para profesores: teacher.md
   - Documentación para estudiantes: student.md
   - Documentación para admin:
-      - Introducción: admin.md
-      - Configuración inicial: admin/configuracion.md
+      - CREACIÓN DE CURSO: admin.md
+      - CREACIÓN DE USUARIOS: admin/create_user.md
       - Gestión de usuarios: admin/usuarios.md
       - Seguridad y respaldo: admin/seguridad.md
       - Personalización: admin/personalizacion.md
