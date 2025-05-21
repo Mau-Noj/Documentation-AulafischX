@@ -270,3 +270,33 @@ body:not(.homepage) .md-content strong {
   margin: 1.5rem auto 2rem auto; /* centrada con espacio */
   width: 160px; /* ajusta el tamaño a gusto */
 }
+
+
+/* Centra titulos */
+
+.text-center {
+  text-align: center;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+  vertical-align: middle;
+}
+.highlight {
+  color: #ff5722;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* resalta el texto junto al icono */
+.highlight {
+  color: #ff5722;
+  font-weight: bold;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+.md-step-icon {
+  font-size: 1.5em;
+  vertical-align: middle;
+  margin-right: 0.3em;
+}

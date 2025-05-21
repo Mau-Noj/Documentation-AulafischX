@@ -15,10 +15,12 @@ theme:
 extra_css:
   - styles/extra.css
   - https://cdn.jsdelivr.net/npm/shepherd.js/dist/css/shepherd.css
+  - https://fonts.googleapis.com/icon?family=Material+Icons
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/shepherd.js/dist/js/shepherd.min.js
   - styles/extra.js
+  - https://fonts.googleapis.com/icon?family=Material+Icons
 
 nav:
   - Inicio: index.md
@@ -40,3 +42,4 @@ markdown_extensions:
   - tables
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list  
